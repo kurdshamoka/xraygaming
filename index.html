@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameZone - کۆمیونیتی گەیمەرەکان</title>
+    <title>XRAY GAMING</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./LOGO1.png">
+
 </head>
 
 
@@ -752,7 +754,7 @@ function showNotification(message, type = 'info') {
 }
 
 // Add interactive effects to game cards
-function initGameCardEffects() {
+ 
     document.querySelectorAll('.game-card').forEach(card => {
         card.addEventListener('click', function() {
             // Scale effect on click
@@ -795,7 +797,7 @@ function initGameCardEffects() {
             this.style.boxShadow = '0 20px 40px rgba(0, 153, 255, 0.2)';
         });
     });
-}
+
 
 // Navigation active state management
 function initNavigationActiveState() {
@@ -822,33 +824,11 @@ function initNavigationActiveState() {
 }
 
 // Tournament countdown functionality
-function startTournamentCountdown() {
-    function updateCountdown() {
-        const tournamentDate = new Date('2025-09-01T18:00:00');
-        const now = new Date();
-        const timeDiff = tournamentDate - now;
         
-        if (timeDiff > 0) {
-            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-            
-            // Update countdown display if element exists
-            const countdownElement = document.getElementById('countdown');
-            if (countdownElement) {
-                countdownElement.textContent = `${days} ڕۆژ، ${hours} کاتژمێر، ${minutes} خولەک`;
-            }
-            
-            console.log(`تورنامێنت دەست پێدەکات لە: ${days} ڕۆژ، ${hours} کاتژمێر، ${minutes} خولەک`);
-        } else {
-            console.log('تورنامێنت دەستی پێکردووە!');
-        }
-    }
-    
     // Update countdown every minute
     setInterval(updateCountdown, 60000);
     updateCountdown(); // Initial call
-}
+ 
 
 // Add CSS keyframes for ripple effect
 function addRippleAnimation() {
@@ -920,21 +900,13 @@ function activateEasterEgg() {
 initKonamiCode();
 
 // Add loading animation for when page loads
-function showLoadingComplete() {
-    console.log('🎮 GameZone loaded successfully!');
-    console.log('🎯 All interactive features are ready!');
-    console.log('💡 Try the Konami code: ↑↑↓↓←→←→BA');
-}
+ 
 
 // Show loading complete message
 window.addEventListener('load', showLoadingComplete);
 
 // Export functions for potential external use
-window.GameZone = {
-    createParticles,
-    showNotification,
-    updateCountdown: startTournamentCountdown
-};
+ 
 </script>
 
 
@@ -959,7 +931,8 @@ window.GameZone = {
             <!-- Center Logo - Now fully responsive -->
             <img src="./logo - Copy.png"   class="center-logo">
             <h1>WELCOME<br>TO<br>XRAY GAMING</h1>
-            <p>هەموو جۆرە پێداویستیەکی گەیمینگ بەردەستە</p>
+            <p>   هەموو جۆرە پێداویستیەکی گەیمینگ 
+بەردەستە      </p>
         </div>
     </section>
 
